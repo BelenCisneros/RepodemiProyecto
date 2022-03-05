@@ -1,0 +1,366 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: absolute;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 166, 0);
+
+
+}
+nav img {
+    width: 20%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 8px;
+}
+
+ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
+    position: sticky;
+    bottom: 0px;
+}
+
+ul a:hover{
+    color: #450552;
+}
+
+.bienvenido{
+    background-image: url( "../img/baile.jpg");
+    width: 100vw;
+    max-width: 100%;
+    height: calc(100vh - 100px) ;
+    align-content: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bienvenido h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+}
+.bienvenido h1:hover{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10vw;
+    color: rgb(255, 255, 255);
+    transform: rotate(30deg );
+}
+
+/*INDEX*/
+/* MAIN */
+#padreHome {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 30% 30%;
+    grid-template-areas:"titulo titulo"
+                        "video img"
+                        "video parrafo";
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    height: 850px;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(255, 166, 0);
+    width: 100vw;
+    max-width: 100%;
+    justify-content: center;
+}
+
+#titulo{
+    grid-area: titulo;
+    position: relative;
+    bottom: 10px;
+}
+
+#video{
+    grid-area: video;
+    width: 50rem;
+
+}
+
+#imgHome{
+    grid-area: img;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    align-items: center;
+}
+
+#parrafoHome{
+    grid-area: parrafo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 80%;    
+    position: relative;
+    top: 15px;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(23, 5, 41);
+    height: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-around;
+
+    
+
+}
+footer img{
+    height: 20px;
+    
+    
+}
+
+
+
+/*EQUIPO*/
+
+#imgEquipo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 45rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-self: center;
+
+}
+
+#imgEquipo p{
+width: 50%;
+position: relative;
+top: 20%;
+left: 25%;
+}
+    
+
+/*COMBOS*/
+
+#padreCombo{
+    background-color: rgb(58, 11, 102);
+    display: grid;
+    height: 1400px;
+    width: 100vw;
+    max-width: 100%;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 10% 30% 30%;
+    grid-template-areas:"combo combo combo"
+                        "combo1 combo2 combo3"
+                        "combo4 combo5 combo6";
+    justify-items: center;
+    align-items: center;
+    justify-content:space-evenly;
+    column-gap: 3%;
+    row-gap: 3%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 30%;
+    height: 98%;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+}
+
+.card:hover{
+    opacity: 80%;
+    font-size: 0.9rem;
+    transform: scale(1.03, 1.03);    
+}
+
+.card button{
+    margin-top: 10%;
+}
+.card img{
+    height: 151.8px;
+}
+
+#spaNenas{
+    grid-area: combo1;
+    width: 100%;
+
+}
+
+#fiestaFluor{
+    grid-area: combo2;
+    width: 100%;
+}
+
+#cumpleArte{
+    grid-area: combo3;
+    width: 100%;    
+}
+#spa{
+    grid-area: combo4;
+    width: 100%;
+
+}
+
+#fie{
+    grid-area: combo5;
+    width: 100%;
+}
+
+#cump{
+    grid-area: combo6;
+    width: 100%;    
+}
+
+
+h1{
+    padding: 100px 0px 30px 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;
+    color: black;
+}
+
+/*GALERIA*/
+.imagenesGaleria{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 300px 300px;
+  column-gap: 2%;
+  row-gap: 2%;
+  height: 40rem;
+  justify-content: space-evenly;
+
+}
+.imagenesGaleria img{
+    width: 100%;
+    height: 100%;
+}
+
+.imagenesGaleria img:hover{
+    transform: scale(1.2,1.2);
+}
+
+/*CONTACTO*/
+iframe{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 40px;
+    padding-left: 30px; 
+    align-items: center;
+}
+main h3{
+    padding: 20% 0% 5% 0%;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+    height: auto;
+    margin: 80px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;  
+    background-color:rgb(253, 139, 0); 
+    padding-left: 30px; 
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+input{
+    background-color: rgb(255, 255, 255) ; 
+    width: 70%; 
+    height: 30px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #450552; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width:600px){
+    .imagenesGaleria{
+
+        grid-template-columns: 100%;
+        grid-template-rows: 30rem 30rem 30rem 30rem 30rem 30rem;
+        height: 202rem;
+    }
+
+    nav ul{
+        height: 180px;
+    }
+    nav img{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    ul{
+    
+        flex-direction: column;    
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+    #padreHome {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 30% 30% 15%;
+        grid-template-areas:"titulo"
+                        "video"
+                        "img"
+                        "parrafo";
+        justify-content: center;
+    }
+
+    #parrafoHome{
+            text-align: center;
+            top: 0;
+        
+    }
+    #video{
+        width: 100%;
+    }
+    
+    #imgEquipo{
+        height: 50rem;    
+    
+    }
+
+}
