@@ -7,6 +7,7 @@
     <title>Mi primer entrega</title>
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="shortcut icon" href="../img/logo chico.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,11 +22,11 @@
             </ul>
         </nav>
     </header>
-    <main id="imgEquipo">
+    <main data-aos="fade-up" id="imgEquipo">
         <div>
             <h1>EQUIPO</h1>
         </div>        
-        <div class="imgEquipo">
+        <div class="imagenEquipo">
             <img src="../img/logo mediano.png" alt="">
         </div>
         <div>
@@ -34,9 +35,14 @@
     </main>
     <footer>
         <p>Nuestras redes</p>
-        <a href="https://www.instagram.com/zerequete.animaciones/"><button><img src="../img/Instagram-logo.png" alt="instagram"></button></a>
-        <a href="https://www.facebook.com/zerequete.animaciones"><button><img src="../img/facebook-770688_1280.png" alt=""></button></a>
-        <a href="https://web.whatsapp.com/"><button><img src="../img/WhatsApp_logo-color-vertical.svg.png" alt=""></button></a>
+        <a href="https://www.instagram.com/zerequete.animaciones/"><img src="../img/Instagram-logo.png" alt="instagram"></a>
+        <a href="https://www.facebook.com/zerequete.animaciones"><img src="../img/facebook-770688_1280.png" alt=""></a>
+        <a href="https://web.whatsapp.com/"><img src="../img/WhatsApp_logo-color-vertical.svg.png" alt=""></a>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
