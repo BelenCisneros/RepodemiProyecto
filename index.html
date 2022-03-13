@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer desafío</title>
-    <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="img/logo chico.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/estilo.css">  
 </head>
 <body>
     <header>
-            <nav>
-                <ul>
+        <nav>
+            <ul>
                 <img src="img/logo largo.png" alt="zerequete">
                 <a href="index.html"><li>HOME</li></a>
                 <a href="html/equipo.html"> <li>EQUIPO</li> </a>
@@ -29,20 +28,21 @@
     </header>
     
     <main data-aos="fade-up">
-        <div id="padreHome">
-            <div id= "titulo">
+        <div>
+            <div class= "titulo">
                <h1>VIDEO 360º DEL SALÓN</h1>
             </div>
-            <div id="video">
-                <iframe width="500" height="300" src="https://www.youtube.com/embed/e9luSoI7dm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="padreHome">
+                <div id="video">
+                    <iframe width= 500rem height= 500vh src="https://www.youtube.com/embed/e9luSoI7dm0" class="img-fluid" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="imgHome">
+                    <img src="img/juego.jpg" alt="juego">
+                </div>
+                <div id="parrafoHome">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tenetur sunt ducimus pariatur blanditiis! Quam maiores nobis mollitia, voluptatem soluta deserunt ducimus, voluptas itaque quisquam reiciendis inventore numquam sint magni.</p>
+                </div>
             </div>
-            <div id="imgHome">
-                <img src="img/juego.jpg" alt="juego">
-            </div>
-            <div id="parrafoHome">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tenetur sunt ducimus pariatur blanditiis! Quam maiores nobis mollitia, voluptatem soluta deserunt ducimus, voluptas itaque quisquam reiciendis inventore numquam sint magni.</p>
-            </div>
-        
         </div>
         
     </main>
